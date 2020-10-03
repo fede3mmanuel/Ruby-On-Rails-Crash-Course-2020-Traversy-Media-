@@ -8,7 +8,7 @@
   <div class="column is-one-quarter">
     <div class="card">
     <header class="card-header">
-      <%= entry.meal_type %>
+      <p class="card-header-title"><%= entry.meal_type %></p>
     </header>
     <div class="card-content">
       <div class="content">
@@ -16,7 +16,7 @@
         <p><span class="has-text-weight-bold"><%= entry.proteins %></span>Grams of protein</p>
         <p><span class="has-text-weight-bold"><%= entry.carbohydrates %></span>Grams of carbohydrates</p>
         <p><span class="has-text-weight-bold"><%= entry.fats %></span>Grams of fat</p>
-        <p class="italic">Logged <%= time_ago_in_words(entry.created_at) %> </p>
+        <p class="italic">Logged <%= time_ago_in_words(entry.created_at) %> ago </p>
       </div>
     </div>
     
